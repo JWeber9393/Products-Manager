@@ -1,0 +1,7 @@
+<form [formGroup]='newProduct' (ngSubmit)="onSubmit(newProduct.value)">
+    Product: <input type="text" formControlName="title">
+    Price: <input type="number" formControlName="price">
+    Image URL: <input type="text" formControlName="imgUrl">
+    <button type="submit">Submit</button>
+    <button [routerLink]="['/products']">Cancel</button>
+</form>
